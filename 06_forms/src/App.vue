@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import Navbar from "../../06_create/src/components/Navbar.vue";
-// import PageViewer from "./components/PageViewer.vue";
-import CreatePage from "../../06_create/src/components/CreatePage.vue";
+import Navbar from "./components/Navbar.vue";
+import PageViewer from "./components/PageViewer.vue";
+import CreatePage from "./components/CreatePage.vue";
 
 export default {
   components: {
     Navbar,
-    // PageViewer,
+    PageViewer,
     CreatePage,
   },
   created() {
@@ -43,7 +43,7 @@ export default {
       this.pages = data;
     },
     pageCreated(pageObj) {
-      console.log(pageObj);
+      this.pages.push(pageObj);
     },
   },
 };
