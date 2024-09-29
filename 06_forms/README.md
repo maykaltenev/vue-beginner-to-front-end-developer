@@ -1,4 +1,4 @@
-# vue-start-spa
+# 06_create
 
 ## Project setup
 ```

@@ -24,9 +24,11 @@
 
 <script>
 import NavbarLink from "./NavbarLink.vue";
-export default {
-  components: { NavbarLink },
 
+export default {
+  components: {
+    NavbarLink,
+  },
   created() {
     this.getThemeSetting();
   },
@@ -45,9 +47,9 @@ export default {
       }
 
       this.theme = theme;
-      this.storeThemSetting();
+      this.storeThemeSetting();
     },
-    storeThemSetting() {
+    storeThemeSetting() {
       localStorage.setItem("theme", this.theme);
     },
     getThemeSetting() {

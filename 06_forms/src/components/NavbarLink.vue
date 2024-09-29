@@ -8,6 +8,7 @@
     >{{ page.link.text }}</a
   >
 </template>
+
 <script>
 export default {
   props: ["page", "isActive"],
